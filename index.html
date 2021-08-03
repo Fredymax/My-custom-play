@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Video Player</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 <body>
   <div class="wrapper">
@@ -20,7 +22,20 @@
           <button id="forward" class="button" title="Avanzar 10 segundos" aria-label="Avanzar 10 segundos"></button>
         </div>
         <div class="player-progress">
-          <input type="range" id="progress" min="0" max="100" value="0" step=".1">
+          <input type="range" id="progress" min="0" max="100" value="0" step=".01">
+        </div>
+        <div class="player-settings">
+          <div class="player-volume">
+            <button class="button-setting" id="volume">
+              <i id="icon-volume" class="fas fa-volume-down"></i>
+            </button>
+            <input id="progress-volume" type="range" min="0" max="1.0" step="0.01" value="0.5">
+          </div>
+          <div class="player-resize">
+            <button class="button-setting" id="resize">
+              <i id="icon-resize" class="fas fa-expand"></i>
+            </button>
+          </div>
         </div>
       </div>
     </div>
